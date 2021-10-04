@@ -1,6 +1,5 @@
 #include "imageProcessing.h"
 #include "bmp.h"
-#include <math.h>
 
 void encrypt(uint_least8_t* iData, int_least32_t iWidth, int_least32_t iHeight, char mes[], const char key[])
 {
