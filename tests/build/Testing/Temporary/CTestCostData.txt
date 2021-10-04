@@ -1,0 +1,7 @@
+example.add 5 0.000292673
+example.subtract 5 0.000259683
+example.multiply 5 0.000264014
+imageProcessing.new_component 5 0.000254222
+imageProcessing.converte_mes_to_binary 0 0
+---
+imageProcessing.converte_mes_to_binary
