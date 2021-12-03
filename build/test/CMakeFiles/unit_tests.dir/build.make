@@ -83,20 +83,36 @@ test/CMakeFiles/unit_tests.dir/example_add.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/example_add.cpp.s"
 	cd /home/rtrk/Documents/project/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rtrk/Documents/project/test/example_add.cpp -o CMakeFiles/unit_tests.dir/example_add.cpp.s
 
+test/CMakeFiles/unit_tests.dir/imageProcessing.c.o: test/CMakeFiles/unit_tests.dir/flags.make
+test/CMakeFiles/unit_tests.dir/imageProcessing.c.o: ../test/imageProcessing.c
+test/CMakeFiles/unit_tests.dir/imageProcessing.c.o: test/CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rtrk/Documents/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object test/CMakeFiles/unit_tests.dir/imageProcessing.c.o"
+	cd /home/rtrk/Documents/project/build/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/CMakeFiles/unit_tests.dir/imageProcessing.c.o -MF CMakeFiles/unit_tests.dir/imageProcessing.c.o.d -o CMakeFiles/unit_tests.dir/imageProcessing.c.o -c /home/rtrk/Documents/project/test/imageProcessing.c
+
+test/CMakeFiles/unit_tests.dir/imageProcessing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unit_tests.dir/imageProcessing.c.i"
+	cd /home/rtrk/Documents/project/build/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rtrk/Documents/project/test/imageProcessing.c > CMakeFiles/unit_tests.dir/imageProcessing.c.i
+
+test/CMakeFiles/unit_tests.dir/imageProcessing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unit_tests.dir/imageProcessing.c.s"
+	cd /home/rtrk/Documents/project/build/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rtrk/Documents/project/test/imageProcessing.c -o CMakeFiles/unit_tests.dir/imageProcessing.c.s
+
 # Object files for target unit_tests
 unit_tests_OBJECTS = \
-"CMakeFiles/unit_tests.dir/example_add.cpp.o"
+"CMakeFiles/unit_tests.dir/example_add.cpp.o" \
+"CMakeFiles/unit_tests.dir/imageProcessing.c.o"
 
 # External object files for target unit_tests
 unit_tests_EXTERNAL_OBJECTS =
 
 bin/unit_tests: test/CMakeFiles/unit_tests.dir/example_add.cpp.o
+bin/unit_tests: test/CMakeFiles/unit_tests.dir/imageProcessing.c.o
 bin/unit_tests: test/CMakeFiles/unit_tests.dir/build.make
 bin/unit_tests: lib/libexample.a
 bin/unit_tests: lib/libgtest_main.a
 bin/unit_tests: lib/libgtest.a
 bin/unit_tests: test/CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rtrk/Documents/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rtrk/Documents/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/unit_tests"
 	cd /home/rtrk/Documents/project/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/rtrk/Documents/project/build/test && /usr/bin/cmake -D TEST_TARGET=unit_tests -D TEST_EXECUTABLE=/home/rtrk/Documents/project/build/bin/unit_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/rtrk/Documents/project/build/test -D TEST_EXTRA_ARGS= -D "TEST_PROPERTIES=LABELS;unit" -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=unit_tests_TESTS -D CTEST_FILE=/home/rtrk/Documents/project/build/test/unit_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=240 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.21/Modules/GoogleTestAddTests.cmake
 

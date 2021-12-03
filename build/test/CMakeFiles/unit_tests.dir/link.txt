@@ -1,1 +1,1 @@
-/usr/bin/c++ --coverage CMakeFiles/unit_tests.dir/example_add.cpp.o -o ../bin/unit_tests  ../lib/libexample.a ../lib/libgtest_main.a ../lib/libgtest.a -lpthread 
+/usr/bin/c++ -rdynamic --coverage CMakeFiles/unit_tests.dir/example_add.cpp.o CMakeFiles/unit_tests.dir/imageProcessing.c.o -o ../bin/unit_tests  ../lib/libexample.a ../lib/libgtest_main.a ../lib/libgtest.a -lpthread 

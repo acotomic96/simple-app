@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rtrk/Documents/project/source/bmp.c
+bmp.h
+/home/rtrk/Documents/project/source/bmp.h
+
+/home/rtrk/Documents/project/source/bmp.h
+stdlib.h
+-
+stdio.h
+-
+stdint.h
+-
+
+/home/rtrk/Documents/project/source/imageProcessing.c
+imageProcessing.h
+/home/rtrk/Documents/project/source/imageProcessing.h
+bmp.h
+/home/rtrk/Documents/project/source/bmp.h
+
+/home/rtrk/Documents/project/source/imageProcessing.h
+stdint.h
+-
+stdbool.h
+-
+string.h
+-
+math.h
+-
+bmp.h
+/home/rtrk/Documents/project/source/bmp.h
+

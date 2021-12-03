@@ -1,10 +1,11 @@
 #ifndef IMAGEPROCESSING_H_
 #define IMAGEPROCESSING_H_
 
+#include <math.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
-#include <math.h>
+#include <stdio.h>
 
 void encrypt(uint_least8_t* iData, int_least32_t iWidth, int_least32_t iHeight, char mes[], const char key[]);
 

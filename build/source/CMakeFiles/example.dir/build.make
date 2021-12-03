@@ -83,17 +83,33 @@ source/CMakeFiles/example.dir/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/example.cpp.s"
 	cd /home/rtrk/Documents/project/build/source && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rtrk/Documents/project/source/example.cpp -o CMakeFiles/example.dir/example.cpp.s
 
+source/CMakeFiles/example.dir/stubs_bmp.c.o: source/CMakeFiles/example.dir/flags.make
+source/CMakeFiles/example.dir/stubs_bmp.c.o: ../source/stubs_bmp.c
+source/CMakeFiles/example.dir/stubs_bmp.c.o: source/CMakeFiles/example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rtrk/Documents/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object source/CMakeFiles/example.dir/stubs_bmp.c.o"
+	cd /home/rtrk/Documents/project/build/source && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/CMakeFiles/example.dir/stubs_bmp.c.o -MF CMakeFiles/example.dir/stubs_bmp.c.o.d -o CMakeFiles/example.dir/stubs_bmp.c.o -c /home/rtrk/Documents/project/source/stubs_bmp.c
+
+source/CMakeFiles/example.dir/stubs_bmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example.dir/stubs_bmp.c.i"
+	cd /home/rtrk/Documents/project/build/source && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rtrk/Documents/project/source/stubs_bmp.c > CMakeFiles/example.dir/stubs_bmp.c.i
+
+source/CMakeFiles/example.dir/stubs_bmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example.dir/stubs_bmp.c.s"
+	cd /home/rtrk/Documents/project/build/source && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rtrk/Documents/project/source/stubs_bmp.c -o CMakeFiles/example.dir/stubs_bmp.c.s
+
 # Object files for target example
 example_OBJECTS = \
-"CMakeFiles/example.dir/example.cpp.o"
+"CMakeFiles/example.dir/example.cpp.o" \
+"CMakeFiles/example.dir/stubs_bmp.c.o"
 
 # External object files for target example
 example_EXTERNAL_OBJECTS =
 
 lib/libexample.a: source/CMakeFiles/example.dir/example.cpp.o
+lib/libexample.a: source/CMakeFiles/example.dir/stubs_bmp.c.o
 lib/libexample.a: source/CMakeFiles/example.dir/build.make
 lib/libexample.a: source/CMakeFiles/example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rtrk/Documents/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../lib/libexample.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rtrk/Documents/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../lib/libexample.a"
 	cd /home/rtrk/Documents/project/build/source && $(CMAKE_COMMAND) -P CMakeFiles/example.dir/cmake_clean_target.cmake
 	cd /home/rtrk/Documents/project/build/source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example.dir/link.txt --verbose=$(VERBOSE)
 

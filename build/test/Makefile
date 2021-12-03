@@ -209,6 +209,30 @@ example_add.cpp.s:
 	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_add.cpp.s
 .PHONY : example_add.cpp.s
 
+imageProcessing.o: imageProcessing.c.o
+.PHONY : imageProcessing.o
+
+# target to build an object file
+imageProcessing.c.o:
+	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/imageProcessing.c.o
+.PHONY : imageProcessing.c.o
+
+imageProcessing.i: imageProcessing.c.i
+.PHONY : imageProcessing.i
+
+# target to preprocess a source file
+imageProcessing.c.i:
+	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/imageProcessing.c.i
+.PHONY : imageProcessing.c.i
+
+imageProcessing.s: imageProcessing.c.s
+.PHONY : imageProcessing.s
+
+# target to generate assembly for a file
+imageProcessing.c.s:
+	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/imageProcessing.c.s
+.PHONY : imageProcessing.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +250,9 @@ help:
 	@echo "... example_add.o"
 	@echo "... example_add.i"
 	@echo "... example_add.s"
+	@echo "... imageProcessing.o"
+	@echo "... imageProcessing.i"
+	@echo "... imageProcessing.s"
 .PHONY : help
 
 

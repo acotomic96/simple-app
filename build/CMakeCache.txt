@@ -306,6 +306,24 @@ INSTALL_GTEST:BOOL=ON
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
 //Value Computed by CMake
+basic_BINARY_DIR:STATIC=/home/rtrk/Documents/project/build/source
+
+//Value Computed by CMake
+basic_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+basic_SOURCE_DIR:STATIC=/home/rtrk/Documents/project/source
+
+//Value Computed by CMake
+basic_test_BINARY_DIR:STATIC=/home/rtrk/Documents/project/build/test
+
+//Value Computed by CMake
+basic_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+basic_test_SOURCE_DIR:STATIC=/home/rtrk/Documents/project/test
+
+//Value Computed by CMake
 googletest-distribution_BINARY_DIR:STATIC=/home/rtrk/Documents/project/build/_deps/gtest-build
 
 //Value Computed by CMake

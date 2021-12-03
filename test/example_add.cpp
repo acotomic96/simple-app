@@ -6,7 +6,6 @@
 
 ///////////////////////////////////////////////Encryption///////////////////////////////////////////////////
 
-
 TEST(imageProcessing, encrypt) {
   uint_least8_t bitmapData[420] = {0};
   uint_least8_t res[420] = {0};
@@ -16,8 +15,6 @@ TEST(imageProcessing, encrypt) {
   int_least32_t iWidth = 7;
   int_least32_t iHeight = 20;
   
-  /*for(int i = 0; i<iWidth*iHeight*3; i++)
-  	res[i] = bitmapData[i];*/
   res[65] = 1;
   res[104] = 1;
   res[113] = 1;
@@ -160,6 +157,31 @@ TEST(imageProcessing, read_length_mes) {
   int res = read_length_mes(bitmapData, iWidth, iHeight, key);
 
   ASSERT_EQ(res, 24);
+}
+
+TEST(imageProcessing, load_image) {
+
+  char *argv1 = "Image.bmp";
+  uint_least8_t bitmapData[420] = {0};
+  BITMAPFILEHEADER * bitmapFileHeader; 
+  BITMAPINFOHEADER * bitmapInfoHeader;
+  
+  uint_least8_t* res = load_image(argv1, bitmapData, bitmapFileHeader, bitmapInfoHeader);
+
+  for(int i = 0; i < 420; i++)
+     ASSERT_EQ(res[i], bitmapData[i]);
+}
+
+TEST(imageProcessing, save_image) {
+
+  char *out = "Image_out.bmp";
+  uint_least8_t bitmapData[420] = {0};
+  BITMAPFILEHEADER * bitmapFileHeader; 
+  BITMAPINFOHEADER * bitmapInfoHeader;
+  
+  int_fast32_t res = save_image(bitmapData, out, bitmapFileHeader, bitmapInfoHeader);
+
+  ASSERT_EQ(res, 0);
 }
 
 

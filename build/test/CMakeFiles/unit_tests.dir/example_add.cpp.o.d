@@ -234,5 +234,5 @@ test/CMakeFiles/unit_tests.dir/example_add.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/rtrk/Documents/project/source/imageProcessing.h \
- /home/rtrk/Documents/project/source/bmp.h
+ /home/rtrk/Documents/project/test/imageProcessing.h \
+ /home/rtrk/Documents/project/test/bmp.h

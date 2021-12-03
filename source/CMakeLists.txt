@@ -1,8 +1,14 @@
+cmake_minimum_required(VERSION 2.6)
+project(basic)
+
+
+
 add_library(example)
 
 target_sources(example
   PRIVATE
     example.cpp
+    stubs_bmp.c
   PUBLIC
     example.h
   )

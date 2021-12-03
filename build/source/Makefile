@@ -209,6 +209,30 @@ example.cpp.s:
 	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/example.cpp.s
 .PHONY : example.cpp.s
 
+stubs_bmp.o: stubs_bmp.c.o
+.PHONY : stubs_bmp.o
+
+# target to build an object file
+stubs_bmp.c.o:
+	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/stubs_bmp.c.o
+.PHONY : stubs_bmp.c.o
+
+stubs_bmp.i: stubs_bmp.c.i
+.PHONY : stubs_bmp.i
+
+# target to preprocess a source file
+stubs_bmp.c.i:
+	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/stubs_bmp.c.i
+.PHONY : stubs_bmp.c.i
+
+stubs_bmp.s: stubs_bmp.c.s
+.PHONY : stubs_bmp.s
+
+# target to generate assembly for a file
+stubs_bmp.c.s:
+	cd /home/rtrk/Documents/project/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/stubs_bmp.c.s
+.PHONY : stubs_bmp.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +250,9 @@ help:
 	@echo "... example.o"
 	@echo "... example.i"
 	@echo "... example.s"
+	@echo "... stubs_bmp.o"
+	@echo "... stubs_bmp.i"
+	@echo "... stubs_bmp.s"
 .PHONY : help
 
 

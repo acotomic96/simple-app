@@ -1,5 +1,5 @@
 #include "example.h"
-//hohohoho
+#include "bmp.h"
 ///////////////////////////////////////////////Encryption///////////////////////////////////////////////////
 void encrypt(uint_least8_t* iData, int_least32_t iWidth, int_least32_t iHeight, char mes[], const char key[])
 {
@@ -203,6 +203,19 @@ char read_component(uint_least8_t iData)
     bit_mes = iData & 0x01;
 
     return bit_mes;
+}
+
+uint_least8_t* load_image(char *argv1, uint_least8_t* bitmapData, BITMAPFILEHEADER *bitmapFileHeader, BITMAPINFOHEADER *bitmapInfoHeader)
+{
+    bitmapData = LoadBitmapFile(argv1, bitmapFileHeader, bitmapInfoHeader);
+    return bitmapData;
+}
+
+int_fast32_t save_image(uint_least8_t* bitmapData, char *out, BITMAPFILEHEADER *bitmapFileHeader, BITMAPINFOHEADER *bitmapInfoHeader)
+{
+    int_fast32_t err;
+    err = SaveBitmapFile(out, bitmapFileHeader, bitmapInfoHeader, bitmapData);
+    return err;
 }
 
 
