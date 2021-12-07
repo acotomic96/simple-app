@@ -20,7 +20,7 @@ void add_length_mes_to_mes(int length_mes, char binary_mes[]);
 
 int decrypt(uint_least8_t* iData, int_least32_t iWidth, int_least32_t iHeight, char mes_res[], const char key[]);
 
-int read_length_mes(uint_least8_t* iData, int iHeight, int iWidth, const char key[]);
+int_least32_t read_length_mes(uint_least8_t* iData, int iHeight, int iWidth, const char key[]);
 
 int_least8_t bin_to_int_digit(char in[], int_least8_t length);
 

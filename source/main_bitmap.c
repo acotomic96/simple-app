@@ -27,8 +27,9 @@ int main(int argc, char* argv[])
     printf("Image encryption\n");
 
     // Load image
-    //bitmapData = LoadBitmapFile(argv[1],&bitmapFileHeader, &bitmapInfoHeader);
-    bitmapData = load_image(argv[1], bitmapData, &bitmapFileHeader, &bitmapInfoHeader);
+
+    bitmapData = LoadBitmapFile(argv[1], &bitmapFileHeader, &bitmapInfoHeader);
+
     if(!bitmapData)
     {
     	printf("Error! Can't open input bitmap file: %s\n", argv[1]);
@@ -40,7 +41,8 @@ int main(int argc, char* argv[])
 
     // Save the result
     char *out = "out_image.bmp";
-    err = save_image(bitmapData, out, &bitmapFileHeader, &bitmapInfoHeader);
+    err = SaveBitmapFile(out, &bitmapFileHeader, &bitmapInfoHeader, bitmapData);
+
     if (err)
     {
     	printf("Error trying to save bitmap\n");
@@ -55,7 +57,7 @@ int main(int argc, char* argv[])
 
     // Load image
 
-    bitmapData = load_image(out, bitmapData, &bitmapFileHeader, &bitmapInfoHeader);
+    bitmapData = LoadBitmapFile(out,&bitmapFileHeader, &bitmapInfoHeader);
 
     if(!bitmapData)
     {
